@@ -6,10 +6,11 @@ namespace yasudabot
 {
 	public class App : Application
 	{
+        public static string ScreenName = "";
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new TodoList();
+            MainPage = new NavigationPage(new FirstPage());
 		}
 
 		protected override void OnStart ()
